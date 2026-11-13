@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Focus Timer | Nico Andes</title><link rel="stylesheet" href="../shared.css"></head>
+<body><main class="app">
+<a class="back" href="../../index.html#work">Back to portfolio</a>
+<h1>Focus Timer</h1>
+<p class="sub">Pick a mode, start the clock, and keep a short task list beside it. Completed focus sessions are counted for today.</p>
+<div class="bar" role="group" aria-label="Timer mode">
+  <button data-mode="focus">Focus 25</button><button data-mode="short">Short break 5</button><button data-mode="long">Long break 15</button>
+</div>
+<section class="timer">
+  <div class="ring" id="ring"><div><output id="time">25:00</output><p class="meta"><span id="count">0</span> focus sessions today</p></div></div>
+  <div><div class="ctl"><button id="go">Start</button><button id="reset" class="ghost">Reset</button></div><p class="meta" id="msg" role="status"></p></div>
+</section>
+<h2>Tasks</h2>
+<form id="f"><input id="t" placeholder="What are you working on?" aria-label="New task" required><button>Add task</button></form>
+<ul class="list panel" id="tasks"></ul>
+</main><script src="../shared.js"></script><script src="app.js"></script></body></html>

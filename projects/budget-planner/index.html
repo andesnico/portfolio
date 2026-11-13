@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Budget Planner | Nico Andes</title><link rel="stylesheet" href="../shared.css"></head>
+<body><main class="app">
+<a class="back" href="../../index.html#work">Back to portfolio</a>
+<h1>Budget Planner</h1>
+<p class="sub">Set a monthly budget, log expenses, and watch the chart update. Sample data, saved in this browser.</p>
+<label class="cap">Monthly budget <input id="cap" type="number" min="0" step="1"></label>
+<div class="stats" id="stats"></div>
+<form id="f"><input id="d" placeholder="Description" aria-label="Description" required><input id="a" type="number" min="0.01" step="0.01" placeholder="Amount" aria-label="Amount" required><select id="c" aria-label="Category"></select><button>Add expense</button></form>
+<section class="panel split"><div class="donut" id="donut"><span id="total"></span></div><ul class="list legend" id="legend"></ul></section>
+<h2>Expenses</h2>
+<ul class="list panel" id="items"></ul>
+</main><script src="../shared.js"></script><script src="app.js"></script></body></html>
